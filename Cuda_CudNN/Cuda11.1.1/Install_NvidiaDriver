@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo ubuntu-drivers autoinstall
+sudo apt install nvidia-driver-470
+echo '---------------Reboot to use nvidia driver'
