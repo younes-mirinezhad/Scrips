@@ -1,11 +1,13 @@
 #!/bin/bash
 
 echo '------------------------------'
-echo 'Step #2: Install OpenCV and “dnn” GPU dependencies'
+echo 'Step #2: Install OpenCV and “dnn” dependencies'
 sudo apt -y update
 sudo apt -y upgrade
 
 ## Install dependencies
+sudo apt -y install python3-pip
+pip install numpy
 sudo apt -y install build-essential checkinstall cmake unzip pkg-config yasm
 sudo apt -y install git gfortran
 sudo apt -y install libjpeg8-dev libpng-dev
@@ -32,11 +34,9 @@ sudo apt -y install libopencore-amrnb-dev libopencore-amrwb-dev
 sudo apt -y install libavresample-dev
 sudo apt -y install x264 v4l-utils
 
-# Optional dependencies
 sudo apt -y install libprotobuf-dev protobuf-compiler
 sudo apt -y install libgoogle-glog-dev libgflags-dev
 sudo apt -y install libgphoto2-dev libeigen3-dev libhdf5-dev doxygen
-
 
 sudo apt -y install libjpeg-dev
 
@@ -63,6 +63,7 @@ mkdir build
 cd build
 
 cmake -D CMAKE_BUILD_TYPE=RELEASE \
+	-D OPENCV_GENERATE_PKGCONFIG=YES \
 	-D CMAKE_INSTALL_PREFIX=/usr/local \
 	-D OPENCV_ENABLE_NONFREE=ON \
 	-D CUDA_ARCH_BIN=7.5 \
@@ -76,16 +77,13 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
         -D WITH_TBB=ON \
         -D WITH_V4L=ON \
 	-D WITH_QT=ON \
+	-D ENABLE_CXX11=ON \
+	-D WITH_INF_ENGINE=ON \
+	-D WITH_OPENGL=ON \
 	-D INSTALL_C_EXAMPLES=OFF \
-	-D PYTHON_EXECUTABLE=~/.virtualenvs/opencv_cuda/bin/python \
-	-D HAVE_opencv_python3=ON \
+	-D HAVE_opencv_python3=OFF \
 	-D INSTALL_PYTHON_EXAMPLES=OFF \
 	-D BUILD_EXAMPLES=OFF ..
-
-#-D OPENCV_GENERATE_PKGCONFIG=YES --> make package and os always know opencv
-#-D ENABLE_CXX11=ON
-#-D WITH_INF_ENGINE=ON
-#-D WITH_OPENGL=ON
 
 make -j8
 sudo make install
