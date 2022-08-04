@@ -1,5 +1,2 @@
-Cuda_CudNN/11.7.0/
-Cuda_CudNN/11.1.1/cuda_11.1.1_455.32.00_linux.run
-Cuda_CudNN/11.1.1/libcudnn8_8.0.5.39-1+cuda11.1_amd64.deb
-Cuda_CudNN/11.1.1/libcudnn8-dev_8.0.5.39-1+cuda11.1_amd64.deb
-Cuda_CudNN/11.1.1/libcudnn8-samples_8.0.5.39-1+cuda11.1_amd64.deb
+*.run
+*.deb

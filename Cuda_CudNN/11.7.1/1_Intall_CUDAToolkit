@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo '---------------Intall CUDA Toolkit---------------'
+sudo apt install build-essential
+sudo sh cuda_11.7.1_515.65.01_linux.run --silent --toolkit
+
