@@ -26,7 +26,7 @@ cuDNN Code Samples and User Guide for Ubuntu20.04 x86_64 (Deb)
 4: run "2_Install_NvidiaDriver" script  
 5: Reboot system to use nvidia driver  
 6: Check nvidia-smi in terminal  
-6: run "3_IntallAndTest_CudNN" script  
+6: run "3_IntallAndTest_cuDNN" script  
 7: If you see the successful message, The test has been passed and you are ready to use CUDA and CUDNN  
 
 --------------------
