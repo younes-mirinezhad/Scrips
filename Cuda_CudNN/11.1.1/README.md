@@ -6,7 +6,7 @@ This script tested on ubuntu20.04
 --------------------
 1: download cuda cuda_11.1.1_455.32.00_linux  
 
-wget https://developer.download.nvidia.com/compute/cuda/11.1.1/local_installers/cuda_11.1.1_455.32.00_linux.run  
+link: https://developer.download.nvidia.com/compute/cuda/11.1.1/local_installers/cuda_11.1.1_455.32.00_linux.run  
 
 --------------------
 2: download cudnn8_8.0.5.39-1 from nvidia website  

@@ -1,0 +1,31 @@
+#!/bin/bash
+
+echo '---------------Intall TensorRT ---------------'
+#wget https://developer.nvidia.com/compute/machine-learning/tensorrt/secure/8.4.3/local_repos/nv-tensorrt-repo-ubuntu2004-cuda11.6-trt8.4.3.1-ga-20220813_1-1_amd64.deb
+sudo dpkg -i nv-tensorrt-repo-ubuntu2004-cuda11.6-trt8.4.3.1-ga-20220813_1-1_amd64.deb
+sudo apt-key add /var/nv-tensorrt-repo-ubuntu2004-cuda11.6-trt8.4.3.1-ga-20220813/*.pub
+sudo apt-get update
+sudo apt-get install tensorrt
+
+#If using Python 3.x:
+python3 -m pip install numpy
+sudo apt-get install python3-libnvinfer-dev
+
+#If you plan to use TensorRT with TensorFlow:
+python3 -m pip install protobuf
+sudo apt-get install uff-converter-tf
+
+#If you would like to run the samples that require ONNX graphsurgeon or use the Python module for your own project, run:
+python3 -m pip install numpy onnx
+sudo apt-get install onnx-graphsurgeon
+
+#Verify the installation.
+dpkg -l | grep TensorRT
+
+#Using The NVIDIA CUDA Network Repo For Debian Installation
+#1: Install the CUDA 
+#2: Install the TensorRT package that fits your particular needs.
+sudo apt-get install tensorrt-libs
+sudo apt-get install tensorrt-dev
+python3 -m pip install numpy
+python3 -m pip install onnx-graphsurgeon
