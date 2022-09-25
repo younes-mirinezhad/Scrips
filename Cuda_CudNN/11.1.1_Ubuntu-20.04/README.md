@@ -12,7 +12,7 @@ link: https://developer.download.nvidia.com/compute/cuda/11.1.1/local_installers
 2: download cudnn8_8.0.5.39-1 from nvidia website  
 
 you need to have an account in nvidia  
-link: https://developer.nvidia.com/cudnn-download-survey  
+link: https://developer.nvidia.com/rdp/cudnn-download  
 after login and check "I Agree To the Terms of the cuDNN Software License Agreement" you can see "Archived cuDNN Releases" link  
 in this page, find "Download cuDNN v8.0.5 (November 9th, 2020), for CUDA 11.1"  
 download this 3 file  

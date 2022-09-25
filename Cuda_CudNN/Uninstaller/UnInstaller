@@ -2,8 +2,8 @@
 
 echo '---------------Uninstall CUDA and NvidiaDriver'
 
-sudo apt-get --purge remove "*cublas*" "cuda*" "nsight*" 
-sudo apt-get --purge remove "*nvidia*"
+sudo apt-get -y --purge remove "*cublas*" "cuda*" "nsight*" 
+sudo apt-get -y --purge remove "*nvidia*"
 sudo rm -rf /usr/local/cuda*
 echo '--------------- Restart'
 

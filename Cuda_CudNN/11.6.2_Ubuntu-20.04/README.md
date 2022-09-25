@@ -12,7 +12,7 @@ link: https://developer.download.nvidia.com/compute/cuda/11.6.2/local_installers
 2: download cudnn8_8.4.1.50_1.0-1 from nvidia website  
 
 you need to have an account in nvidia  
-link: https://developer.nvidia.com/cudnn-download-survey  
+link: https://developer.nvidia.com/rdp/cudnn-download  
 after login and check "I Agree To the Terms of the cuDNN Software License Agreement" you can see "Archived cuDNN Releases" link  
 in this page, find "Download cuDNN v8.4.1 (May 27th, 2022), for CUDA 11.x"  
 download this file: Local Installer for Ubuntu20.04 x86_64 (Deb)  
