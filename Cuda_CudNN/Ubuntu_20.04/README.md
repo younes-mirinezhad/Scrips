@@ -9,6 +9,8 @@ This scripts tested on ubuntu20.04
 --------------------
 
 1: download cuda  
+--use this link: https://developer.nvidia.com/cuda-toolkit-archive  
+--or download link in scripts  
 2: run "Cuda Installer" script  
 3: Reboot system to use CUDA and nvidia driver  
 4: check nvidia driver in terminal : "nvidia-smi"  
