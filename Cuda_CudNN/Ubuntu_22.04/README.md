@@ -1,10 +1,11 @@
 # Scrips
 
 Install cuda, cudnn, nvidiaDriver and TensorRT  
-This scripts tested on ubuntu22.04  
+
+Installer scripts tested on ubuntu22.04  
 --Cuda 11.7.1 + cuDNN 8.5.0  
---Cuda 11.8.0 (run file) + cuDNN 8.8.1  
---Cuda 11.8.0 (run file) + cuDNN 8.9.0  
+--Cuda 11.8.0 + cuDNN 8.8.1  
+--Cuda 11.8.0 + cuDNN 8.9.0  
 
 --------------------
 

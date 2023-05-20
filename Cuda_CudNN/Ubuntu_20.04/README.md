@@ -1,8 +1,9 @@
 # Scrips
 
 Install cuda, cudnn, nvidiaDriver and TensorRT  
-This scripts tested on ubuntu20.04  
---Cuda 11.1.1 + cuDNN 8.0.5  
+
+Installer scripts tested on ubuntu20.04  
+--Cuda 11.1.1 (run file) + cuDNN 8.0.5  
 --Cuda 11.6.2 + cuDNN 8.4.1  
 --Cuda 11.8.0 + cuDNN 8.8.1  
 
