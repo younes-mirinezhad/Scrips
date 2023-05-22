@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Tested on ubuntu 22.04
+# Tested on ubuntu 20.04 and 22.04
 
 echo '------------------------------'
 echo 'Step #1: Install OpenCV and “dnn” dependencies'
@@ -45,13 +45,10 @@ sudo apt install -y tesseract-ocr libtesseract-dev
 sudo apt install -y libeigen3-dev
 
 #Requried for Atlas:
-sudo apt -y install libatlas-base-dev libatlas3-base liblapacke-dev liblapack-dev
+sudo apt install -y libatlas-base-dev libatlas3-base liblapacke-dev liblapack-dev
 
 #Requried for QT5:
-sudo apt install qtbase5-dev qt5-qmake qttools5-dev qttools5-dev-tools qtwebengine5-dev libqt5svg5-dev libqt5websockets5-dev
-
-## Install other dependencies:
-sudo apt install -y libopenblas-dev
+sudo apt install -y qtbase5-dev qt5-qmake qttools5-dev qttools5-dev-tools qtwebengine5-dev libqt5svg5-dev libqt5websockets5-dev
 
 echo '------------------------------'
 echo 'Step #2: Download OpenCV source code'
