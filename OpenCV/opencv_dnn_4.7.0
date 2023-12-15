@@ -96,7 +96,7 @@ make -j$(nproc)
 sudo make install
 sudo ldconfig
 
-sudo ln -s /usr/local/lib/python3.*/site-packages/cv2 /usr/local/lib/python3.*/dist-packages/cv2
+sudo ln -s /usr/local/lib/python3.*/site-packages/cv2 /usr/local/lib/python3.*/dist-packages/
 
 cd ~
 rm -rf opencv opencv_contrib

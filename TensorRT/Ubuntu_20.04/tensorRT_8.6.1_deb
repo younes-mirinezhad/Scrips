@@ -1,0 +1,33 @@
+#!/bin/bash
+
+sudo dpkg -i nv-tensorrt-local-repo-ubuntu2004-8.6.1-cuda-11.8_1.0-1_amd64.deb
+sudo cp /var/nv-tensorrt-local-repo-ubuntu2004-8.6.1-cuda-11.8/nv-tensorrt-local-D7BB1B18-keyring.gpg /usr/share/keyrings/
+echo '-----Update'
+sudo apt -y update
+
+
+echo '-----For full runtime'
+sudo apt -y install tensorrt
+
+echo '-----For the lean runtime only, instead of tensorrt'
+sudo apt -y install libnvinfer-lean8
+sudo apt -y install libnvinfer-vc-plugin8
+
+echo '-----For lean runtime Python package'
+sudo apt -y install python3-libnvinfer-lean
+echo '-----For dispatch runtime Python package'
+sudo apt -y install python3-libnvinfer-dispatch
+echo '-----For all TensorRT Python packages'
+python3 -m pip install numpy
+sudo apt -y install python3-libnvinfer-dev
+
+echo '-----If you want to use TensorRT with the UFF converter to convert models from TensorFlow'
+python3 -m pip install protobuf
+sudo apt -y install uff-converter-tf
+
+echo '-----If you want to run samples that require onnx-graphsurgeon or use the Python module for your own project'
+python3 -m pip install numpy onnx
+sudo apt -y install onnx-graphsurgeon
+
+echo '-----Verify the installation.'
+dpkg-query -W tensorrt

@@ -1,6 +1,6 @@
 # Scrips
 
-Install cuda, cudnn, nvidiaDriver and TensorRT  
+Install cuda, cudnn, nvidiaDriver  
 
 Installer scripts tested on ubuntu20.04  
 --Cuda 11.1.1 (run file) + cuDNN 8.0.5  
@@ -26,12 +26,4 @@ in this page, find "Download cuDNN ..., for CUDA ...."
 download this file: Local Installer for Ubuntu20.04 x86_64 (Deb)  
 6: run "cuDNN Installer" script  
 7: If you see the successful message, The test has been passed and you are ready to use CUDA and CUDNN  
-
---------------------
-
-8: download TensorRT  
-link: https://developer.nvidia.com/nvidia-tensorrt-8x-download  
-after login and check "I Agree To the Terms of the NVIDIA TensorRT License Agreement" you can see TensorRT versions  
-click on "TensorRT ..." and download "TensorRT ... for Ubuntu 20.04 and CUDA ... DEB local repo Package" and download this file  
-9: run "TensorRT Installer" script  
 
