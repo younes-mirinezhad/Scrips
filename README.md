@@ -8,3 +8,4 @@ Some useful scripts
     3. <a href="https://github.com/younes-mirinezhad/Scrips/tree/main/Cuda_CudNN/UnInstaller">Uninistaller</a>
 3. <a href="https://github.com/younes-mirinezhad/Scrips/tree/main/TensorRT">TensorRT</a>
     1. <a href="https://github.com/younes-mirinezhad/Scrips/tree/main/TensorRT/Ubuntu_20.04">Ubuntu 20.04</a>
+    2. <a href="https://github.com/younes-mirinezhad/Scrips/tree/main/TensorRT/Ubuntu_22.04">Ubuntu 22.04</a>
