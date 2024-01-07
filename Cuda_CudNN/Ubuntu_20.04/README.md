@@ -4,10 +4,10 @@ Install cuda, cudnn, nvidiaDriver
 
 Installer scripts tested on ubuntu20.04  
 --Cuda 11.1.1 (run file) + cuDNN 8.0.5  
---Cuda 11.6.2 (deb file)+ cuDNN 8.4.1  
---Cuda 11.8.0 (deb file)+ cuDNN 8.8.1  
---Cuda 11.8.0 (deb file)+ cuDNN 8.9.0  
---Cuda 11.8.0 (run file)+ cuDNN 8.8.1  
+--Cuda 11.6.2 (deb file) + cuDNN 8.4.1  
+--Cuda 11.8.0 (deb file) + cuDNN 8.8.1  
+--Cuda 11.8.0 (deb file) + cuDNN 8.9.0  
+--Cuda 11.8.0 (run file) + cuDNN 8.8.1  
 
 --------------------
 
