@@ -18,6 +18,7 @@ sudo apt -y install python3-libnvinfer-lean
 echo '-----For dispatch runtime Python package'
 sudo apt -y install python3-libnvinfer-dispatch
 echo '-----For all TensorRT Python packages'
+sudo apt install -y python3-pip
 python3 -m pip install numpy
 sudo apt -y install python3-libnvinfer-dev
 

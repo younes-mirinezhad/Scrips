@@ -10,9 +10,6 @@ sudo apt -y install python3-pip build-essential checkinstall cmake unzip pkg-con
 
 pip install numpy
 
-#sudo add-apt-repository "deb http://security.ubuntu.com/ubuntu xenial-security main"
-#sudo apt -y update
-
 cd /usr/include/linux
 sudo ln -s -f ../libv4l1-videodev.h videodev.h
 cd ~
@@ -29,9 +26,7 @@ mv opencv_contrib-4.5.0 opencv_contrib
 
 echo '------------------------------'
 echo 'Step #3: Configure OpenCV with NVIDIA GPU support'
-cd ~/opencv
-mkdir build
-cd build
+cd ~/opencv && mkdir build && cd build
 
 cmake -D CMAKE_BUILD_TYPE=RELEASE \
 	-D OPENCV_GENERATE_PKGCONFIG=YES \
@@ -59,3 +54,4 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 make -j$(nproc)
 sudo make install
 sudo ldconfig
+cd ~ && sudo rm -rf opencv opencv_contrib

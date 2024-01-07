@@ -5,3 +5,5 @@ sudo rm -rf /usr/local/include/opencv*
 sudo rm -rf /usr/local/lib/*opencv*
 sudo rm -rf /usr/local/share/opencv*
 sudo rm -rf /usr/local/lib/pkgconfig/opencv*
+sudo rm -rf /usr/local/lib/python3.8/dist-packages/cv2
+sudo rm -rf /usr/local/lib/python3.8/site-packages/cv2

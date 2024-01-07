@@ -7,6 +7,7 @@ Installer scripts tested on ubuntu22.04
 --Cuda 11.8.0 + cuDNN 8.8.1  
 --Cuda 11.8.0 + cuDNN 8.9.0  
 --Cuda 11.8.0 + cuDNN 8.9.2  
+--Cuda 12.1.1 + cuDNN 8.9.7  
 
 --------------------
 
