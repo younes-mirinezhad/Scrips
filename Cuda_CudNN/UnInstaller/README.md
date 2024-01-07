@@ -9,4 +9,5 @@ UnInstaller Tested on ubuntu20.04
 UnInstaller Tested on ubuntu22.04  
 --Cuda 11.7.1 and NvidiaDriver  
 --Cuda 11.8.0 and NvidiaDriver  
-
+--Cuda 12.1.1 and NvidiaDriver  
+--Cuda 12.3.2 and NvidiaDriver  
