@@ -1,5 +1,0 @@
-#!/bin/bash
-
-echo '---------------Intall Nvidia Driver---------------'
-sudo ubuntu-drivers autoinstall
-echo '---------------Reboot to use nvidia driver'

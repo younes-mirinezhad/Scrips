@@ -3,7 +3,8 @@
 Install TensorRT  
 
 Installer scripts tested on ubuntu22.04  
---Cuda 12.1.1 + cuDNN  
+--Cuda 12.1.1 + cuDNN 8.9.7  
+--Cuda 12.3.2 + cuDNN 9.0.0  
 
 --------------------
 

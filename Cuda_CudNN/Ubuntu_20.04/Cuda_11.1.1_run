@@ -4,10 +4,10 @@ echo '---------------Download CUDA 11.1.1---------------'
 #wget https://developer.download.nvidia.com/compute/cuda/11.1.1/local_installers/cuda_11.1.1_455.32.00_linux.run
 
 echo '---------------Intall CUDA 11.1.1-----------------'
-sudo apt install build-essential
+sudo apt install -y build-essential
 sudo sh cuda_11.1.1_455.32.00_linux.run --silent --toolkit
 
 echo 'PATH="/usr/local/cuda/bin:$PATH"' >> ~/.bashrc
 echo 'LD_LIBRARY_PATH="/usr/local/cuda/lib64:$LD_LIBRARY_PATH"' >> ~/.bashrc
-source .bashrc
+source ~/.bashrc
 

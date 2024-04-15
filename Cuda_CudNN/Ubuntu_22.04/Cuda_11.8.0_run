@@ -4,10 +4,12 @@ echo '---------------Download CUDA 11.8.0---------------'
 #wget https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/cuda_11.8.0_520.61.05_linux.run
 
 echo '---------------Intall CUDA 11.8.0-----------------'
-sudo apt install build-essential
+sudo apt install -y build-essential
 sudo sh Cuda_11.8.0_520.61.05_linux.run --silent --toolkit
 
 echo 'PATH="/usr/local/cuda/bin:$PATH"' >> ~/.bashrc
 echo 'LD_LIBRARY_PATH="/usr/local/cuda/lib64:$LD_LIBRARY_PATH"' >> ~/.bashrc
-source .bashrc
+source ~/.bashrc
+
+echo '---------------Reboot to use CUDA and nvidia driver'
 

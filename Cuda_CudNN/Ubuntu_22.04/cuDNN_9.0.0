@@ -1,0 +1,36 @@
+#!/bin/bash
+
+
+
+
+#in this page, find "Download cuDNN v8.9.7 (December 5th, 2023), for CUDA 12.x"
+#download this file: Local Installer for Ubuntu22.04 x86_64 (Deb)
+
+#'---------------Download cuDNN 9.0.0---------------'
+#you need to have an account in nvidia
+#link: https://developer.nvidia.com/cudnn-archive
+# click on "cuDNN 9.0.0 (February 2024)"
+#select Operating System=Linux, Architecture=x86_64, Distribution=Ubuntu, Version=22.04, Installer Type=deb(local)
+#download: https://developer.download.nvidia.com/compute/cudnn/9.0.0/local_installers/cudnn-local-repo-ubuntu2204-9.0.0_1.0-1_amd64.deb 
+
+echo '---------------Intall cuDNN ---------------'
+sudo dpkg -i cudnn-local-repo-ubuntu2204-9.0.0_1.0-1_amd64.deb
+sudo cp /var/cudnn-local-repo-ubuntu2204-9.0.0/cudnn-*-keyring.gpg /usr/share/keyrings/
+sudo apt-get update
+sudo apt-get -y install cudnn
+
+# for cuda 11.x
+#sudo apt-get -y install cudnn-cuda-11
+
+# for cuda 12.x
+sudo apt-get -y install cudnn-cuda-12
+
+
+echo '---------------Test cuDNN ---------------'
+sudo apt -y install libfreeimage3 libfreeimage-dev
+
+cp -r /usr/src/cudnn_samples_v9/ $HOME
+cd  $HOME/cudnn_samples_v9/mnistCUDNN
+make clean && make
+./mnistCUDNN
+

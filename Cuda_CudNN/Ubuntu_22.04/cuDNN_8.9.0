@@ -1,14 +1,14 @@
 #!/bin/bash
 
 #'---------------Download cuDNN 8.9.0---------------'
-#you need to have an account in nvidia  
-#link: https://developer.nvidia.com/rdp/cudnn-download  
-#after login and check "I Agree To the Terms of the cuDNN Software License Agreement" you can see "Archived cuDNN Releases" link  
-#in this page, find "Download cuDNN v8.9.0 (April 11th, 2023), for CUDA 11.x"  
-#download this file: Local Installer for Ubuntu22.04 x86_64 (Deb) 
+#you need to have an account in nvidia
+#link: https://developer.nvidia.com/cudnn-archive
+# click on "cuDNN 8.x - 1.x"
+#in this page, find "Download cuDNN v8.9.0 (April 11th, 2023), for CUDA 11.x"
+#download this file: Local Installer for Ubuntu22.04 x86_64 (Deb)
 
 echo '---------------Intall cuDNN ---------------'
-sudo apt-get install zlib1g
+sudo apt-get install -y zlib1g
 sudo dpkg -i cudnn-local-repo-ubuntu2204-8.9.0.131_1.0-1_amd64.deb
 sudo cp /var/cudnn-local-repo-ubuntu2204-8.9.0.131*/cudnn-local-*-keyring.gpg /usr/share/keyrings/
 sudo apt-get update

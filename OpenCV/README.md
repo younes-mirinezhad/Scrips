@@ -6,6 +6,7 @@ opencv_dnn_4.5.0 tested on ubuntu 20.04
 opencv_dnn_4.6.0 tested on ubuntu 20.04  
 opencv_dnn_4.7.0 tested on ubuntu 20.04  
 opencv_dnn_4.7.0 tested on ubuntu 22.04  
+opencv_dnn_4.9.0 tested on ubuntu 22.04  
 
 --------------------
 1: Determine your GPU CUDA architecture version (Compute Capability)  
